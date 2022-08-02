@@ -8,9 +8,11 @@ export const getCommits = async(req, res) => {
         const resData = [];
         let commitObj = {};
         commits.forEach(commit => {
+            commitObj = {};
             commitObj.sha = commit.sha
             commitObj.message = commit.commit.message
             commitObj.author = commit.commit.author
+            commitObj.avatar_url = commit.author.avatar_url
             resData.push(commitObj);
         });
         
