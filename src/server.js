@@ -1,0 +1,15 @@
+import express from "express";
+import { router } from "./routes/commit.route.js";
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+//Middleware
+app.use(express.json());
+
+//Routes
+app.use("/", router);
+
+app.listen(PORT, () => {
+    console.log(`Server on port ${PORT}`)
+});
