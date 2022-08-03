@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 export const getCommits = async(req, res) => {
     try {
-        const URL = "https://api.github.com/repos/LervinU/repo-commits/commits";
+        const URL = "https://api.github.com/repos/LervinU/commits-repo/commits";
         const response = await fetch(URL);
         const commits = await response.json();
         const resData = [];
