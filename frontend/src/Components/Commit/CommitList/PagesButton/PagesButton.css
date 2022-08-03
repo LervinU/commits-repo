@@ -1,0 +1,20 @@
+.btnGroup button {
+    border: 1px solid rgba(27, 31, 36, 0.15);
+    width: 5rem;
+    height: 2.2rem;
+    font-size: 13px;
+    color: #0969DA;
+    box-shadow: 2px 2px 6px #f5f5f5;
+    background-color: #F6F8FA;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+}
+
+.btnGroup button:hover {
+    border: none;
+    width: 5rem;
+    background-color: #0969DA;
+    color: white;
+    box-shadow:1px solid rgba(27, 31, 36, 0.15);
+}
